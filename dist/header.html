@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+
+    </style>
+    <!-- -->
+
+</head>
+<body>
+    <ul class="a11y-nav">
+        <li><a href="#main">Listes de tous les speakers</a></li>
+        <li><a href="#search">Aller à la recherche</a></li>
+    </ul>
+    <!--
+      Menu d'accessibilité utiliser la tabulation
+    -->
+  <header class="header">
+    <nav class="menu menu-burger " id="menu" role="tablist">
+        <div class="siteLogo">
+            <a href="#" class="logo"><img src="./images/logos/logo2023.svg"></a>
+        </div>
+        <div class="fill" style="width: 0%;"></div>
+        <span class="overlay"></span>
+        <ul class=" m-visible s-visible xs-visible">
+            <li><a href="#" role="tab" class="menu-link" title="">Event</a></li>
+            <li><span class="menu-separator"></span></li>
+            <li><a href="#" role="tab" class="menu-link" title="">Speakers</a></li>
+            <li><span class="menu-separator"></span></li>
+            <li><a href="#" role="tab" class="menu-link" title="">Team</a></li>
+            <li><span class="menu-separator"></span></li>
+            <li><a href="#" role="tab" class="menu-link" title="">Contact</a></li>
+            <li><a href="#" role="tab" title="" class="menu-link menu__links-icones"><i class="fa-solid icones fa-calendar-alt"></i>Schedule</a></li>
+            <li><a href="#" role="tab" title="" id="search" class="menu-link search-toggle"><i class="fa-solid icones fa-search"></i></a></li>
+        </ul>
+        <!--
+          search js
+        -->
+        <div class="search-block">
+          <form class="search-form">
+            <span><i class="fa-sharp fa-solid fa-arrow-left search-cancel"></i></span>
+             <input type="search" name="search" class="search-input" placeholder="Search here...">
+          </form>
+       </div>
+    </nav>
+    <nav class="menu-mobile">
+        <div class="m-hide l-hide">
+            <div class="menu-slider" id="trigger">
+                <i class="fa-solid icones fa-calendar-alt"></i>
+                <i class="fas fa-bars"> MENU</i>
+            </div>
+            <div id="triggered">
+                <ul class="triggered-link">
+                    <li class="txt-right d-flex flex-just-end"><i class="fas fa-times" id="close"></i></li>
+                    <li><a href="#" title="">Event</a></li>
+                    <li><a href="#" title="">Speakers</a></li>
+                    <li><a href="#" title="">Team</a></li>
+                    <li><a href="#" title="">Contact</a></li>
+                    <li><a href="#" title="">Schedule</a></li>
+                    <li><a href="#" title="">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+  <!--
+
+
+    <header class="">
+        <nav class="navigation ">
+            <a href="#" class="logo"><img src="./images/logos/logo2023.svg"></a>
+            <a href="#" class="">Event</a>
+            <span class="menu-separator"> </span>
+            <a href="#" class="">Speakers</a>
+            <span class="menu-separator"></span>
+            <a href="#" class="">Team</a>
+            <span class="menu-separator"></span>
+            <a href="#" class="">Contact</a>
+            <a href="#" class="icones fa-calendar-alt"> Schedule</a>
+            <a href="#" class="icones fa-search"></a>  input search js
+
+          </nav>
+          <section class="heros">
+            <h1 class="heros__title">
+              <strong class="heros__year">Speaker Edition 2023</strong>
+              <p class="heros__description">Discover the speakers and the topic or suggest your own topic for our next event</p> 
+            </h1>
+            <img class="heros__img" src="./images/SpeakersPicture/presents@3x.png">
+          </section> 
+    </header>
+      -->
+    <main style="display: none;" id="main">
+        <section class="events_speakers container-grid" >
+            <header >
+                <nav class="navigation-breadcrumb" style="background:rgb(248 248 248);    ">
+                    <a href="#" class="icones fa-home"></a>
+                    <span class="menu-separator"></span>
+
+                    <a href="#" class="">Speakers</a>
+                </nav>
+            </header>
+            <div>
+                <div class="all_speakers">
+  
+                  <section class="speaker ">
+                    <header class="speaker__header">
+                      <h2 class="speaker__name">Chris 
+                        <strong>Coyier</strong>
+                      </h2>
+                      <p class="speaker__location">Milwaukee, WI</p>
+                      <div class="speaker__photo">
+                        <img class="speaker__img" src="./images//SpeakersPicture/chris@3x.jpg" alt="">
+                      </div>
+                    </header>
+                  
+                    <div class="speaker__main">
+                      <h2 class="speaker__main_title">Atomic Design</h2>
+                      <p class="speaker__main_txt">Lorem ipsum dolor sit amet adipisicing elit similique suscipit facere</p>
+                    </div>
+                    <footer class="speaker__footer">
+                      <time class="speaker__time" datetime="">10h15</time>
+                      <span class="speaker__room">R2</span>
+                      <a href="#" class="speaker__link">about</a>
+                    </footer>
+                  </section>
+                  
+                  <section class="speaker">
+                    <header class="speaker__header">
+                      <h2 class="speaker__name">Sara
+                        <strong>Soueidan</strong>
+                      </h2>
+                      <p class="speaker__location">Lebanon</p>
+                      <div class="speaker__photo">
+                        <img class="speaker__img" src="./images//SpeakersPicture/sara@3x.jpg" alt="">
+                      </div>
+                    </header>
+                  
+                    <div class="speaker__main">
+                      <h2 class="speaker__main_title">Going Offline</h2>
+                      <p class="speaker__main_txt">You can re-visit my Web site even when you’re not connected to the Internet</p>
+                    </div>
+                    <footer class="speaker__footer">
+                      <time class="speaker__time" datetime="">10h15</time>
+                      <span class="speaker__room">R2</span>
+                      <a href="#" class="speaker__link">about</a>
+                    </footer>
+                  </section>
+                  <section class="speaker ">
+                    <header class="speaker__header">
+                      <h2 class="speaker__name">Eric
+                        <strong>Meyer</strong>
+                      </h2>
+                      <p class="speaker__location">Cleveland, OH</p>
+                      <div class="speaker__photo">
+                        <img class="speaker__img" src="./images//SpeakersPicture/eric@3x.jpg" alt="">
+                      </div>
+                    </header>
+                  
+                    <div class="speaker__main">
+                      <h2 class="speaker__main_title">Atomic Design</h2>
+                      <p class="speaker__main_txt">Lorem ipsum dolor sit amet adipisicing elit similique suscipit facere</p>
+                    </div>
+                    <footer class="speaker__footer">
+                      <time class="speaker__time" datetime="">10h15</time>
+                      <span class="speaker__room">R2</span>
+                      <a href="#" class="speaker__link">about</a>
+                    </footer>
+                  </section>
+                  
+                  <section class="speaker">
+                    <header class="speaker__header">
+                      <h2 class="speaker__name">Lea
+                        <strong>Verou</strong>
+                      </h2>
+                      <p class="speaker__location">Cambridge, MA</p>
+                      <div class="speaker__photo">
+                        <img class="speaker__img" src="./images//SpeakersPicture/lea@3x.jpg" alt="">
+                      </div>
+                    </header>
+                  
+                    <div class="speaker__main">
+                      <h2 class="speaker__main_title">Going Offline</h2>
+                      <p class="speaker__main_txt">You can re-visit my Web site even when you’re not connected to the Internet</p>
+                    </div>
+                    <footer class="speaker__footer">
+                      <time class="speaker__time" datetime="">10h15</time>
+                      <span class="speaker__room">R2</span>
+                      <a href="#" class="speaker__link">about</a>
+                    </footer>
+                  </section>
+                  <section class="speaker ">
+                    <header class="speaker__header">
+                      <h2 class="speaker__name">Shirley
+                        <strong>Wu</strong>
+                      </h2>
+                      <p class="speaker__location">San Francisco, CA</p>
+                      <div class="speaker__photo">
+                        <img class="speaker__img" src="./images//SpeakersPicture/shirley@3x.jpg" alt="">
+                      </div>
+                    </header>
+                  
+                    <div class="speaker__main">
+                      <h2 class="speaker__main_title">Atomic Design</h2>
+                      <p class="speaker__main_txt">Lorem ipsum dolor sit amet adipisicing elit similique suscipit facere</p>
+                    </div>
+                    <footer class="speaker__footer">
+                      <time class="speaker__time" datetime="">10h15</time>
+                      <span class="speaker__room">R2</span>
+                      <a href="#" class="speaker__link">about</a>
+                    </footer>
+                  </section>
+                  
+                  <section class="speaker">
+                    <header class="speaker__header">
+                      <h2 class="speaker__name">Luke
+                        <strong>Wroblewski</strong>
+                      </h2>
+                      <p class="speaker__location">San Fransisco, CA</p>
+                      <div class="speaker__photo">
+                        <img class="speaker__img" src="./images//SpeakersPicture/luke@3x.jpg" alt="">
+                      </div>
+                    </header>
+                  
+                    <div class="speaker__main">
+                      <h2 class="speaker__main_title">Going Offline</h2>
+                      <p class="speaker__main_txt">You can re-visit my Web site even when you’re not connected to the Internet</p>
+                    </div>
+                    <footer class="speaker__footer">
+                      <time class="speaker__time" datetime="">10h15</time>
+                      <span class="speaker__room">R2</span>
+                      <a href="#" class="speaker__link">about</a>
+                    </footer>
+                  </section>
+                  <section class="speaker ">
+                    <header class="speaker__header">
+                      <h2 class="speaker__name">Nicolas
+                        <strong>Gallagher</strong>
+                      </h2>
+                      <p class="speaker__location">San Fransisco, CA</p>
+                      <div class="speaker__photo">
+                        <img class="speaker__img" src="./images//SpeakersPicture/nico@3x.jpg" alt="">
+                      </div>
+                    </header>
+                  
+                    <div class="speaker__main">
+                      <h2 class="speaker__main_title">Atomic Design</h2>
+                      <p class="speaker__main_txt">Lorem ipsum dolor sit amet adipisicing elit similique suscipit facere</p>
+                    </div>
+                    <footer class="speaker__footer">
+                      <time class="speaker__time" datetime="">10h15</time>
+                      <span class="speaker__room">R2</span>
+                      <a href="#" class="speaker__link">about</a>
+                    </footer>
+                  </section>
+                  
+                  <section class="speaker">
+                    <header class="speaker__header">
+                      <h2 class="speaker__name">Rachel
+                        <strong>Andrew</strong>
+                      </h2>
+                      <p class="speaker__location">Bristol, UK</p>
+                      <div class="speaker__photo">
+                        <img class="speaker__img" src="./images//SpeakersPicture/rachel@3x.jpg" alt="">
+                      </div>
+                    </header>
+                  
+                    <div class="speaker__main">
+                      <h2 class="speaker__main_title">Going Offline</h2>
+                      <p class="speaker__main_txt">You can re-visit my Web site even when you’re not connected to the Internet</p>
+                    </div>
+                    <footer class="speaker__footer">
+                      <time class="speaker__time" datetime="">10h15</time>
+                      <span class="speaker__room">R2</span>
+                      <a href="#" class="speaker__link">about</a>
+                    </footer>
+                  </section>
+                  <section class="speaker">
+                    <header class="speaker__header">
+                      <h2 class="speaker__name">Stephen
+                        <strong>Hay</strong>
+                      </h2>
+                      <p class="speaker__location">Leeuwarden, NL</p>
+                      <div class="speaker__photo">
+                        <img class="speaker__img" src="./images//SpeakersPicture/stephen@3x.jpg" alt="">
+                      </div>
+                    </header>
+                  
+                    <div class="speaker__main">
+                      <h2 class="speaker__main_title">Atomic Design</h2>
+                      <p class="speaker__main_txt">Lorem ipsum dolor sit amet adipisicing elit similique suscipit facere</p>
+                    </div>
+                    <footer class="speaker__footer">
+                      <time class="speaker__time" datetime="">10h15</time>
+                      <span class="speaker__room">R2</span>
+                      <a href="#" class="speaker__link">about</a>
+                    </footer>
+                  </section>
+                  
+                  <section class="speaker">
+                    <header class="speaker__header">
+                      <h2 class="speaker__name">Paul
+                        <strong>Irish</strong>
+                      </h2>
+                      <p class="speaker__location">Palo Alto, CA</p>
+                      <div class="speaker__photo">
+                        <img class="speaker__img" src="./images//SpeakersPicture/paul@3x.jpg" alt="">
+                      </div>
+                    </header>
+                  
+                    <div class="speaker__main">
+                      <h2 class="speaker__main_title">Going Offline</h2>
+                      <p class="speaker__main_txt">You can re-visit my Web site even when you’re not connected to the Internet</p>
+                    </div>
+                    <footer class="speaker__footer">
+                      <time class="speaker__time" datetime="">10h15</time>
+                      <span class="speaker__room">R2</span>
+                      <a href="#" class="speaker__link">about</a>
+                    </footer>
+                  </section>
+                  <section class="speaker">
+                    <header class="speaker__header">
+                      <h2 class="speaker__name">Nicole
+                        <strong>Sullivan</strong>
+                      </h2>
+                      <p class="speaker__location">San Francisco, CA</p>
+                      <div class="speaker__photo">
+                        <img class="speaker__img" src="./images//SpeakersPicture/nicole@3x.jpg" alt="">
+                      </div>
+                    </header>
+                  
+                    <div class="speaker__main">
+                      <h2 class="speaker__main_title">Going Offline</h2>
+                      <p class="speaker__main_txt">You can re-visit my Web site even when you’re not connected to the Internet</p>
+                    </div>
+                    <footer class="speaker__footer">
+                      <time class="speaker__time" datetime="">10h15</time>
+                      <span class="speaker__room">R2</span>
+                      <a href="#" class="speaker__link">about</a>
+                    </footer>
+                  </section>
+                  <section class="speaker speaker-active">
+                    <header class="speaker__header">
+                      <h2 class="speaker__name">Brad
+                        <strong>Frost</strong>
+                      </h2>
+                      <p class="speaker__location">Pittsburgh, PA</p>
+                      <div class="speaker__photo">
+                        <img class="speaker__img" src="./images//SpeakersPicture/brad@3x.jpg" alt="Brad Frost">
+                      </div>
+                    </header>
+                  
+                    <div class="speaker__main">
+                      <h2 class="speaker__main_title">Atomic Design</h2>
+                      <p class="speaker__main_txt">Lorem ipsum dolor sit amet adipisicing elit similique suscipit facere</p>
+                    </div>
+                    <footer class="speaker__footer">
+                      <time class="speaker__time" datetime="">10h15</time>
+                      <span class="speaker__room">R2</span>
+                      <a href="#" class="speaker__link">about</a>
+                    </footer>
+                  </section>
+    
+              </div>
+        </section>
+
+    </main>
+    <div style="display: none;">
+        <section class="become_speaker container-grid">
+            <div class="become_speaker__text">
+                <h2 class="become_speaker__title txt-uppercase">Become speaker</h2>
+                <h3 class="become_speaker__subtitle">Do you have a topic that you like ?</h3>
+                <p class="become_speaker__description"> Submit it for the next event by filling out the form below. Do not forget to specify the subject and the related keywords</p>
+            </div>
+            <div class="become_speaker__form">
+                <form method="" class="wrapper-form container-grid grid">
+                    <!--
+<div class="field_name">
+  <input required type="text" class="form__input" placeholder="login" pattern=".[A-Za-z]{6,}">
+  <label for="login" class="field_name__label">Nickname</label>
+</div>
+                    -->
+                    <div  class="grid ">
+                        <div class="col-xl-6 col-l-6 col-m-12 col-xs-12 grid field_name">
+                          <input class="form__input"  type="text" name="names" id="name" placeholder="Name*" >
+                          <label  for="name">Name *</label>
+                      </div>
+                      <div class="col-xl-6 col-l-6 col-m-12 col-xs-12  grid field_email">
+                        <input class="form__input"  type="email" name="email" placeholder="Mail*" >
+                        <label for="email" >Mail *</label>
+                    </div>
+                    </div>
+                    <div  class="grid">
+                        <div class="col-xl-6 col-l-6 col-m-12 col-xs-12  grid field_subject">
+                          <input class="form__input"  type="text" name="subject" id="subject" placeholder="Your subject*" >
+                          <label  for="subject">Subject *</label>
+                      </div>
+                      <div class="col-xl-6 col-l-6 col-m-12 col-xs-12 grid field_keywords">
+                        <input class="form__input"  type="text" name="keywords" placeholder="Keywords" >
+                        <label for="keywords" >Keywords *</label>
+                    </div>
+                    </div>
+                    <!--
+                    <div class="col-m-12 grid field_name">
+                        <textarea name="message" id="message" placeholder="Short details *"></textarea>
+                        <label for="message" class="d-none">Short details *</label>
+                    </div>
+                    -->
+                    <div class="grid">
+                        <div class="field_object col-xl-12 col-l-12 col-m-12 col-xs-12 grid">
+                            <textarea name="textarea" id="textarea" placeholder="Short details *"></textarea>
+                            <label for="textarea" class="d-none">Short details *</label>
+                        </div>
+                    </div>
+
+                    <div class="txt-center">
+                        <div class="col-xs-12">
+                            <input type="submit" value="Send your subject" class="btn border-radius color-red">
+                            <p class="become_speaker__or">or just participate to the present event ...</p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+    </div>
+    <section style="display: none;" class="cta cta__container">
+        <a href="" class="cta__getticket">
+          <strong class="cta__group">get ticket
+            <svg class="icon cta__svg" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="48" height="49" role="img" aria-labelledby="pi-paypal">
+                <title id="pi-paypal">PayPal</title>
+                <path fill="red" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+                <path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"></path>
+                <path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"></path>
+                <path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"></path>
+            </svg>
+
+            <!--
+            <span class="paypal">paypal</span>
+            <span class="visa">visa</span>
+            -->
+            <i class="icones fa-calendar-alt"></i>
+          </strong>
+          <em class="cta__price">$199 USD</em>
+        </a>
+      </section>
+      <scroll-top class="scroll-top" style="display: grid;">
+        <svg width="100%" height="100%" viewBox="0 0 7 5" xmlns="http://www.w3.org/2000/svg" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5; fill: none;">
+           <path d="M1,4l2.5,-3l2.5,3" stroke="#FFF" stroke-width="1.4"></path>
+        </svg>
+    </scroll-top>
+      <script src="./scripts/menu.js"></script>
+      <script src="./scripts/scrolltop.js"></script>
+      <script>
+
+  
+      </script>
+      <script>
+
+    </script>
+        <script>
+
+          
+            </script>
+      <script>
+        
+
+
+
+        let all_speackers = document.querySelector(".all_speakers") //sélectionne un conteneur dans all_speakers
+        all_speackers.addEventListener("click", function (e) {// ajoute event click à la liste
+        let mySection = e.target.closest("section.speaker") //cherche le parent de type "section" de l'élément réellement cliqué
+        if( document.querySelector(".speaker-active")) document.querySelector(".speaker-active").classList.remove("speaker-active") //si un actif, on le retire
+            mySection.classList.toggle("speaker-active") //ajout class active si elle n'y est pas
+        })
+       
+       
+        </script>
+</body>
+</html>

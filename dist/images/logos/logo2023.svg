@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="64px" viewBox="0 0 128 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="normal" line-spacing="40.8">
+        <g id="components/nav/desktop" transform="translate(-37.000000, -32.000000)">
+            <g id="Group-3" transform="translate(37.000000, 32.000000)">
+                <text id="2023" font-family="MavenPro-Regular, Maven Pro" font-size="14" letter-spacing="-0.271249991" fill="#353237">
+                    <tspan x="88.3055" y="37">2023</tspan>
+                </text>
+                <text id="CodeConf" font-family="LeagueSpartanVariable_wght1540000, League Spartan Variable" font-size="32" letter-spacing="-0.619999978" fill="#5F4BE8">
+                    <tspan x="4.09376945" y="32">CodeConf </tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

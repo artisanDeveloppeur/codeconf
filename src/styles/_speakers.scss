@@ -1,0 +1,107 @@
+/*! SASS #speakers  */
+
+:root {
+  --pd-card: 1.25rem;
+ // --font: 'maven pro', helvetica, sans-serif;
+  --bullet: 2rem;
+}
+/*
+.events_speakers > h2{ 
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+*/
+.card_allspeakers_div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80rem;
+  margin: 0rem auto;
+}
+
+.card {
+  max-width: 17.5rem;
+  border: 1px solid #888; // bug image à 100%  le reste avec padding ou margin 
+  //padding: var(--pd-card);
+  //padding-block-end: .25rem;
+  padding: 1.25rem;
+  padding-block-end: .25rem;
+  //font-family: var(--font);
+ //margin-block: 1.25rem;
+  margin-block: 0.5rem;
+
+
+  &__pict {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+
+    &::after {
+      grid-area: 1/1/-1/-1;
+      display: grid;
+      border-radius: var(--bullet);
+      width: var(--bullet);
+      height: var(--bullet);
+      border: 2px solid #3d3c3c;
+      content: "i";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /*
+    &::before {
+      grid-area: 1/1/-1/-1;
+      z-index: 1;
+      display: grid;
+      background: #000;
+      width: calc(var(--bullet) * .1);
+      height: calc(var(--bullet) * .5);
+      content: "r";
+    }
+    */
+
+  }
+
+  &__img {
+    width: 100%;
+    grid-area: 1/1/-1/-1;
+  }
+
+  &__orator,
+  &__name {
+    font-weight: normal;
+  }
+
+  &__orator {
+    //font: 200 1.6rem/1 var(--font);
+    display: grid;
+    color: #000a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  &__location {
+    margin: 0;
+    opacity: 0.5;
+  }
+
+  &__orator {
+
+    // code ici
+    &::after {}
+
+    &--active {}
+  }
+
+  &__topic,
+  &__description,
+  &__time,
+  &__room,
+  &__link {
+    font-size: 0;
+  }
+}

@@ -1,0 +1,32 @@
+/*! SASS #default  */
+
+@mixin box-sizing($box-model: border-box) {
+  box-sizing: $box-model;
+}
+
+*,
+*::before,
+*::after {
+  @include box-sizing();
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+body,
+main {
+  background: #f8f8f8;
+}
+
+.become_speaker_div {
+  background: white;
+}

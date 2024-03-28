@@ -1,0 +1,71 @@
+/*! SASS #schedule - debut  */
+#schedule .column {
+
+  margin: 0 .5%;
+}
+
+#schedule,
+#schedule h4 {
+  text-align: center;
+  padding: .5em;
+}
+
+#schedule .column .row {
+  padding: 1.2em;
+  overflow: auto;
+  border: 1px solid #d8d8d8;
+
+  text-align: left;
+
+}
+
+#schedule .column .time {
+  //width: 25%;
+  //float: left;
+}
+
+
+
+#schedule li {
+  display: list-item;
+}
+
+#schedule ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+
+#schedule .container {
+  max-width: 980px;
+  margin: auto;
+}
+
+#schedule .column {
+  //background-color: #EEAAA2;
+}
+
+#schedule h5 {
+  //text-align: left;
+  margin-top: 0;
+  padding-bottom: .5em;
+}
+
+
+.room__vh {
+  visibility: hidden;
+
+}
+
+@media screen and (max-width: 576px) {
+  .room__vh {
+    display: none !important;
+  }
+}
+
+.shedule-hr {
+  padding-block: 3rem 0;
+}
+
+/*! SASS #schedule - fin  */

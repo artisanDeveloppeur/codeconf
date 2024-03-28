@@ -1,0 +1,88 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid white;
+  gap: .5rem;
+  background: white;
+  margin: 0;
+  border: none;
+
+  a {
+    color: black;
+    padding: 0.5rem;
+    margin: .4rem;
+    text-decoration: none;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    &:hover {
+      border: 1px solid white;
+
+    }
+  }
+}
+
+.navigation .logo {
+  margin-inline-end: auto !important;
+  order: -1;
+
+  //margin: 2rem 1rem;
+}
+
+.navigation .logo img {
+  width: 150px;
+}
+
+
+.navigation .menu-separator::after {
+  content: "|";
+  display: grid;
+  margin-top: 2.75rem;
+
+}
+
+.navigation-breadcrumb {
+  display: flex;
+  justify-content: start;
+  border-bottom: 1px solid white;
+  gap: .5rem;
+  //background: white;
+  margin: 0;
+  border: none;
+
+  a {
+    color: black;
+    /* padding: 0.5rem; */
+    margin: 0.8rem 0;
+    text-decoration: none;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    &:hover {
+      border: 1px solid white;
+
+    }
+  }
+}
+
+.navigation-breadcrumb .menu-separator::after {
+  content: "|";
+  display: grid;
+  margin-top: 1rem;
+
+
+}
+
+.navigation-breadcrumb a.breadcrumb-home {
+  font-size: 0;
+}
+
+.navigation-breadcrumb a.breadcrumb-home i {
+  font-size: initial;
+}

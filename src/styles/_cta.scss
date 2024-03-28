@@ -1,0 +1,48 @@
+.cta {
+
+  &__container {
+    text-align: center;
+    background-image: linear-gradient(180deg, #fff 6rem, #1D1C22 6rem);
+    padding: 3rem;
+  }
+
+  &__getticket {
+    display: inline-grid;
+    justify-items: center;
+    text-decoration: none;
+
+  }
+
+  &__group {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.75rem 1.8rem;
+    border-radius: 4rem;
+    background: red;
+    box-shadow: 0 1px 12px 24px rgba(191, 52, 69, 0.15), 0 -2px 0 25px rgba(208, 202, 196, 0.07);
+    border-radius: 50px;
+
+  }
+
+  &__svg {
+    vertical-align: middle;
+  }
+
+  &__price {
+    padding: .3rem 1.25rem .5rem;
+    background: #1a191d;
+    position: relative;
+    color: white;
+    font-style: normal;
+    font-size: 1rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+  }
+
+}
+
+.cta__group:hover {
+
+  box-shadow: 0 0 0 12px rgba(240, 53, 84, 0.5), 0 0 8px 20px rgba(230, 51, 81, 0.4);
+
+}

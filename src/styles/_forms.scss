@@ -1,0 +1,162 @@
+/*! SASS #forms  */
+
+//(pattern) dans les form + etoile en css
+
+.become_speaker {
+  &__text {
+    //border:3px solid darkgray;
+    text-align: center;
+    margin-block: 8rem 2rem;
+  }
+
+  &__title {
+    font-size: 1.75rem;
+    color: #6c11ff;
+
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    ;
+    font-weight: 300;
+    ;
+  }
+
+  &__description {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: rgb(110, 106, 106);
+
+
+  }
+}
+
+.wrapper-form {
+
+  padding: 0 3rem 0 1rem;
+
+}
+
+.form__input {
+  width: 100%;
+  outline: none;
+  box-shadow: inset 0 -2px 0 -1px #000;
+  border: none;
+
+  &::placeholder {
+    transition: all .5s;
+    color: #0008;
+  }
+
+  &:focus {
+    box-shadow: inset 0 -3px 0 -1px grey;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &~label {
+      opacity: 1;
+    }
+  }
+
+  /*
+  &:valid {
+    & ~ label::after {
+      content:"  V";
+      color: #0C9;
+    }
+  }
+  */
+}
+
+/*
+input:valid~button {
+  pointer-events: auto;
+  background: #0C9;
+}
+*/
+label {
+  order: -1;
+  opacity: 0;
+  //padding-bottom: 1rem;
+}
+
+.field_textarea {}
+
+.field_textarea textarea {
+  resize: none;
+  padding: 1rem;
+  //border: none;
+  box-shadow: inset 0 0 0 1px #fff;
+  outline: none;
+  min-height: 10rem;
+}
+
+.field_textarea textarea:focus {
+  box-shadow: inset 0 0 0 1px #2E2B39;
+}
+
+// bug shord details placeholder
+.field_textarea textarea:focus~label {
+  opacity: 1;
+}
+
+label.required::after {
+  content: "*";
+  color: red;
+}
+
+label.label-fullname::after {
+  content: " * (Prénom + Nom)";
+  color: grey;
+}
+
+label.label-email::after {
+  content: " * de type (email@address.com)";
+  color: grey;
+}
+
+.field_textarea label {
+  transform: translate(0rem, 0.5rem)
+}
+
+.btn.border-radius.color-red {
+  color: red;
+  border-color: red;
+  border: 2px solid red;
+
+}
+
+.btn.border-radius.color-red:hover {
+  background: red;
+  color: white;
+}
+
+.become_speaker__or {
+  font-size: 2.5rem;
+  width: 24rem;
+  margin: 2rem auto;
+}
+
+// Validation
+
+.form__input:valid {
+  border-bottom: 2px solid green;
+  color: green;
+  //background: url("../../dist/images/svg/form-valid.svg") no-repeat 95% 50% lightgreen;
+  background: url("../../dist/images/svg/form-valid.svg") no-repeat 95% 50%;
+  box-shadow: inset 0 -2px 0 -1px transparent;
+  padding: 0.75rem;
+}
+
+.form__input:focus:invalid {
+  border-bottom: 2px solid red;
+  color: red;
+  //background: url("../../dist/images/svg/form-error.svg") no-repeat 95% 50% lightsalmon;
+  background: url("../../dist/images/svg/form-error.svg") no-repeat 95% 50%;
+  box-shadow: inset 0 -2px 0 -1px transparent;
+  padding: 0.75rem;
+
+
+}
